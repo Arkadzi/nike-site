@@ -67,6 +67,12 @@ ul {
 }
 
 @media (min-width: 768px) {
+  .hidden-div {
+    visibility: hidden;
+  }
+     img.img-responsive {
+       width:300px;
+     }
     .container {
         width: 750px;
     }
@@ -76,8 +82,15 @@ ul {
         width: 880px;
     }
 
+    .hidden {
+      visibility: visible;
+    }
+
 }
 @media (min-width: 1200px) {
+    .hidden {
+      visibility: visible;
+    }
     .container {
         width: 880px;
     }
@@ -85,6 +98,9 @@ ul {
 }
 
 @media (max-width: 768px) {
+    img.img-responsive {
+      width:400px;
+    }
     #top-logo {
         margin-left:8px;
     }
@@ -101,7 +117,9 @@ ul {
   background-color: red;
   height: 1000px;
 }
-
+img {
+  max-width: 100%;
+}
 .blue {
   background-color: #b3e8c6;
 }
