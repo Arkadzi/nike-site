@@ -12,9 +12,11 @@ ul {
 p {
     margin: 0;
 }
-a > img {
-    width:100%;
+
+.aa-blog-img > a > img {
+    width: 100%;
 }
+
 .row {
     margin-left: 0;
     margin-right: 0;
@@ -81,7 +83,7 @@ a > img {
     background-color: transparent;
     color: #808080;
     font-size: 10px;
-    line-height:24px;
+    line-height: 24px;
     padding: 0 0 0 20px;
 }
 
@@ -108,7 +110,6 @@ a > img {
         margin-left: -8px;
         margin-right: -8px;
     }
-
 }
 
 @media (min-width: 992px) {
@@ -136,7 +137,7 @@ a > img {
 
     .aa-footer-bottom-area p {
         text-align: center;
-        margin-bottom:16px;
+        margin-bottom: 16px;
     }
 }
 
@@ -235,14 +236,13 @@ a > img {
 }
 
 .item p {
-    color:#000;
+    color: #000;
     margin: 10px 0 6px 0;
 }
 
 .pagination > li:first-child > a, .pagination > li:first-child > span {
     border-radius: 0;
 }
-
 
 .pagination > li:last-child > a, .pagination > li:last-child > span {
     border-radius: 0;
@@ -280,4 +280,65 @@ a > img {
 .pagination {
     margin-top: 8px;
     margin-bottom: 28px;
+}
+
+.aa-blog-content > p {
+    font-size: 16px;
+    font-family: "Segoe UI Semibold", sans-serif;
+    margin-left: 8px;
+    margin-top: 30px;
+    margin-bottom: 8px;
+}
+
+.aa-sidebar-widget > p {
+    font-size: 16px;
+    font-family: "Segoe UI Semibold", sans-serif;
+    margin-top: 30px;
+    margin-bottom: 8px;
+}
+
+.aa-blog-content > p > span {
+    color: #646464;
+}
+
+#side-menu {
+    float: left;
+    padding-left: 16px;
+    width: 15%;
+}
+
+li > .sidebar-sub-menu {
+    margin-left: 8px;
+}
+
+.sidebar-sub-menu a {
+    color: #424242;
+}
+
+.sidebar-sub-menu .sidebar-sub-menu {
+    margin-bottom: 16px;
+}
+.sidebar-sub-menu .active-menu > a {
+    font-family: "Segoe UI Semibold", sans-serif;
+    text-decoration: none;
+    color: #000;
+}
+
+.filter {
+    color: #424242;
+}
+
+.sidebar-sub-menu .filter {
+    font-family: "Segoe UI Semibold", sans-serif;
+}
+
+/*@media (min-width:1200px) {*/
+    /*#side-menu {*/
+    /*}*/
+/*}*/
+
+@media (max-width:1300px) {
+    #side-menu {
+        display: none;
+    }
 }
