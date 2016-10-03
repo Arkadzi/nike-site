@@ -12,13 +12,15 @@ ul {
 p {
     margin: 0;
 }
-
+a > img {
+    width:100%;
+}
 .row {
     margin-left: 0;
     margin-right: 0;
 }
 
-.col-md-12, .col-sm-6 {
+.col-md-12, .col-sm-6, .col-md-3, .col-sm-4 {
     padding-right: 0;
     padding-left: 0;
 }
@@ -102,6 +104,11 @@ p {
         margin-bottom: 0;
     }
 
+    .aa-blog-content {
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+
 }
 
 @media (min-width: 992px) {
@@ -119,7 +126,7 @@ p {
 }
 
 @media (max-width: 768px) {
-    #top-logo {
+    #top-logo, .pagination {
         margin-left: 8px;
     }
 
@@ -164,6 +171,7 @@ p {
         margin-bottom: 30px;
         text-align: center;
     }
+
 }
 
 #aa-footer .aa-footer-top .aa-footer-top-area .aa-footer-widget .aa-footer-nav li a {
@@ -196,7 +204,7 @@ p {
 #aa-footer .aa-footer-top {
     display: inline;
     float: left;
-    padding: 36px 0;
+    padding: 30px 0;
     width: 100%;
     min-height: 100px;
 }
@@ -218,4 +226,58 @@ p {
 
 .aa-footer-bottom-area p span {
     color: #fff;
+}
+
+.item {
+    padding: 8px;
+    color: #424242;
+    font-family: "Segoe UI Semibold", sans-serif;
+}
+
+.item p {
+    color:#000;
+    margin: 10px 0 6px 0;
+}
+
+.pagination > li:first-child > a, .pagination > li:first-child > span {
+    border-radius: 0;
+}
+
+
+.pagination > li:last-child > a, .pagination > li:last-child > span {
+    border-radius: 0;
+}
+
+.pagination > li > a, .pagination > li > span {
+    border: none;
+    background-color: #848484;
+    color: #fff;
+    padding: 14px 20px;
+}
+
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+    background-color: #424242;
+}
+
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+    background-color: #a5a5a5;
+    color: #fff;
+}
+
+.pagination > li > a {
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+.pagination {
+    margin-top: 8px;
+    margin-bottom: 28px;
 }
