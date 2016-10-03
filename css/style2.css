@@ -9,6 +9,10 @@ ul {
     list-style: none;
 }
 
+p {
+    margin: 0;
+}
+
 .row {
     margin-left: 0;
     margin-right: 0;
@@ -90,8 +94,14 @@ ul {
     }
 
     .bottom-navbar-nav > li {
-        float: left;
+        float: right;
     }
+
+    .aa-footer-bottom-area p {
+        float: left;
+        margin-bottom: 0;
+    }
+
 }
 
 @media (min-width: 992px) {
@@ -115,6 +125,11 @@ ul {
 
     .bottom-navbar-nav > li {
         text-align: center;
+    }
+
+    .aa-footer-bottom-area p {
+        text-align: center;
+        margin-bottom:16px;
     }
 }
 
@@ -164,7 +179,7 @@ ul {
 #aa-footer .aa-footer-bottom {
     display: inline;
     float: left;
-    padding: 15px 0;
+    padding: 0 0 36px 0;
     width: 100%;
 }
 
@@ -193,4 +208,14 @@ ul {
 
 .secondary-link {
     color: #808080;
+}
+
+.aa-footer-bottom-area p {
+    font-size: 10px;
+    color: #808080;
+    line-height: 24px;
+}
+
+.aa-footer-bottom-area p span {
+    color: #fff;
 }
