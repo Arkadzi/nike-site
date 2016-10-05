@@ -403,4 +403,16 @@ li > .sidebar-sub-menu {
 .contact-info-item {
     padding: 36px 36px 36px 60px;
     /*float: left;*/
+    display: inline-block;
 }
+
+.contact-info-item img, .contact-info-item div {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.contact-info-item img {
+    margin-top: 14px;
+    margin-right: 36px;
+}
+
